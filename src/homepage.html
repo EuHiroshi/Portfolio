@@ -13,7 +13,7 @@
 
   <div class="container">
     <nav>
-      <div class="logo">Portfolio</div>
+      <div class="logo" onclick="paginaInicial()">Portfolio</div>
       <ul class="navItems">
         <li><a href="./tecnologias.html">Tecnologias</a></li>
         <li><a href="./projetos.html">Projetos</a></li>
@@ -22,6 +22,8 @@
         <li><a href="https://www.linkedin.com/in/eduardo-hiroshi-117495209/" target="_blank">Linkedin</a></li>
         <li><a href="https://github.com/EuHiroshi" target="_blank">GitHub</a></li>
         <li><a href="https://www.instagram.com/hiroshivaz/?next=%2F" target="_blank">Instagram</a></li>
+        <button id="toggle-dark-mode" onclick="toggleDarkMode()">🌑</button>
+
       </ul>
     </nav>
 
@@ -32,7 +34,9 @@
         <p>Estou no 5 semestre de engenharia de software, amo aprender coisas novas, estudar outras tecnologias,
           resolver problemas e jogar com meus amigos.</p>
         <div class="btns">
-          <button>Currículo</button>
+          <form method="get" action="./assets/CV/CurriculoMaio2023.pdf" target="_blank">
+            <button>Ver Currículo</button>
+          </form>
         </div>
       </div>
       <div class="cols cols1">
@@ -42,7 +46,7 @@
       </div>
     </div>
 
-  <script src="./js/index.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
